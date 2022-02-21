@@ -1,0 +1,16 @@
+.footerHold {
+    height: 5em;
+    background-color: #170c07;
+    color: whitesmoke;
+    display: grid;
+    justify-content: center;
+    align-self:end;
+}
+
+.copyrights {
+    align-self: flex-end;
+    margin: .5rem 0;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    font-family: mono;
+}

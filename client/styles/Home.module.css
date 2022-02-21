@@ -1,0 +1,30 @@
+
+.headerHold {
+  display: flex;
+  border-bottom: 3px solid whitesmoke;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  color: whitesmoke;
+  font-size: 2rem;
+  font-weight: bolder;
+  margin: .2rem 2rem;
+}
+
+.about {
+  margin-right: 1rem;
+  font-weight: bolder;
+  text-decoration: underline;
+  padding: 0.1rem 0;
+}
+
+.p {
+  margin: 2em;
+  color: rgb(0, 0, 0);
+}
+
+@media (max-width: 600px) {
+  
+}
