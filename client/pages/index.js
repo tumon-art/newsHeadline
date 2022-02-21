@@ -16,8 +16,6 @@ export default function Home() {
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni dolor tempore, fugit delectus, laboriosam dolore sed assumenda nam animi error modi quidem, tenetur libero? Veritatis temporibus eius fugit quam.
       Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum magni dolor tempore, fugit delectus, laboriosam dolore sed assumenda nam animi error modi quidem, tenetur libero? Veritatis temporibus eius fugit quam.
      </p>
-
-     <Footer />
     </>
   )
 }
