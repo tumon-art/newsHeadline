@@ -1,6 +1,5 @@
 import styles from '../styles/About.module.css'
 import Link from 'next/link'
-import Footer from '../comps/Footer'
 
 const about = () => {
   return (

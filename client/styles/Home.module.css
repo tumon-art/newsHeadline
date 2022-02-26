@@ -20,9 +20,21 @@
   padding: 0.1rem 0;
 }
 
-.p {
+.headline {
   margin: 2em;
-  color: rgb(0, 0, 0);
+}
+
+.titles {
+  margin-top: 0.5em;
+  color: rgb(221, 75, 17);
+  background-color: rgb(68, 25, 9);
+  font-weight: bolder;
+  font-size: 0.9rem;
+  font-family: monospace;
+  /* border-radius: 10px 10px; */
+  padding: 0.7em;
+  border-left: 6px solid rgb(235, 103, 27);
+  box-shadow: 1px 1px 3px 1px rgb(119, 33, 17);
 }
 
 @media (max-width: 600px) {
