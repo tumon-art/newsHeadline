@@ -21,12 +21,14 @@ export default function Home() {
      </div>
      </div>
      <div className={styles.headline}>
-        {data.articles.map((e)=>{
+        {data.articles !== undefined && (
+          data.articles.map((e,i)=>{
             return(
                 <div className={styles.titles} 
-                key={e.id}> {e.title} </div>
+                key={i}> {e.title} </div>
             )
-        })}
+        })
+        )}
      </div>
     </>
   )
