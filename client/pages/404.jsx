@@ -1,7 +1,18 @@
 import styles from '../styles/404.module.css'
 import Link from 'next/link'
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 
 const NotFound = () => {
+  const router = useRouter()
+
+  // Redirect to HOME 
+  useEffect(()=>{
+    setTimeout(()=>{
+      router.push('/')
+    },3000)
+  },[])
+
   return (
    <div className={styles.notFoundHold}>
     <h2 className={styles.h2}> 404 Erorr...</h2>
@@ -10,7 +21,7 @@ const NotFound = () => {
 
     <Link className={styles.link} href='/'>
         <a className={styles.link}>
-            Home
+          Home
         </a>
     </Link>
 
