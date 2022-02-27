@@ -27,7 +27,7 @@
 }
 
 .titles {
-  margin-top: 0.5em;
+  margin-bottom: 0.5em;
   color: rgb(221, 75, 17);
   background-color: rgb(68, 25, 9);
   font-weight: bolder;
@@ -35,21 +35,25 @@
   font-family: monospace;
   /* border-radius: 10px 10px; */
   padding: 0.7em;
-  border-left: 6px solid rgb(235, 103, 27);
-  box-shadow: 1px 1px 3px 1px rgb(119, 33, 17);
+  border-left: 6px solid rgb(155, 53, 6);
+  box-shadow: 1px 1px 3px 1px rgb(119, 29, 17);
   transition: .3s;
 
 }
 
 .headline :hover {
-
-  transform: scaleY(1.1);
-  transform: translate(31deg);
+  border: none;
   background-color: rgb(46, 11, 3);
 }
 
 .demo {
   height: 100vh;
+}
+
+.img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
 @media screen and (min-width:800px) {

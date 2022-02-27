@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Image from 'next/image'
 
 
 export default function Home({posts}) {
@@ -16,6 +17,7 @@ export default function Home({posts}) {
       </div>
     )
   }
+
   return (
     <>
      <div className={styles.headerHold}>
@@ -28,11 +30,13 @@ export default function Home({posts}) {
         {posts.articles !== undefined && (
           posts.articles.map((e,i)=>{
             return(
-                <div className={styles.titles} 
-                key={i}>
+                <div key={i}>
+                <div className={styles.titles}>
+                <img className={styles.img} src={e.urlToImage} alt='image' loading="lazy" />
                   <Link href={e.url}>
                     {e.title}
                   </Link>
+                </div>
                 </div>
             )
         })
