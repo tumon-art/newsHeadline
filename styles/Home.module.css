@@ -35,14 +35,14 @@
   font-family: 'Fjalla One', sans-serif;
   /* border-radius: 10px 10px; */
   padding: 0.7em;
-  border-left: 6px solid rgb(155, 53, 6);
-  box-shadow: 1px 1px 3px 1px rgb(119, 29, 17);
+  box-shadow: 3px 3px 6px 2px rgb(119, 29, 17);
   transition: .3s;
 
 }
 
-.headline :hover {
-  background-color: rgb(46, 11, 3);
+.titles:hover {
+  background: rgb(46, 11, 3);
+
 }
 
 .demo {
@@ -54,6 +54,7 @@
   height: 160px;
   object-fit: cover;
 }
+
 
 @media screen and (min-width:800px) {
   .headline {
