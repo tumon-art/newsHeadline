@@ -5,6 +5,7 @@
     display: grid;
     justify-content: center;
     align-self:end;
+    position: relative;
 }
 
 .p {
@@ -22,4 +23,22 @@
     font-size: 0.8rem;
     font-weight: bolder;
     font-family: mono;
+}
+
+.scrollTop {
+    position: absolute;
+    right: 2%;
+    top:5%;
+    height: 2em;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.2s;
+    color: #7e300d;
+    background-color: #381d10;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.scrollTop:hover {
+    transform: scale(1.1) rotate(180deg);
 }
