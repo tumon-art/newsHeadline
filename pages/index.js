@@ -2,7 +2,7 @@ import Home from "../comps/Home"
 
 export async function getStaticProps() {
 
-  const res = await fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=edad89887fb146608543a1054589c3dc')
+  const res = await fetch(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.NEWS_API}`)
   const data = await res.json()
 
   if (!data) {
@@ -19,7 +19,6 @@ export async function getStaticProps() {
 }
 
 const index = ({data}) => {
-  console.log(data)
   return (
    <>
     <Home posts={data} />
