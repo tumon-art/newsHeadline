@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 .headerHold {
   display: flex;
@@ -11,6 +12,7 @@
   font-size: 2rem;
   font-weight: bolder;
   margin: .2rem 2rem;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 .about {
@@ -35,8 +37,49 @@
   padding: 0.7em;
   border-left: 6px solid rgb(235, 103, 27);
   box-shadow: 1px 1px 3px 1px rgb(119, 33, 17);
+  transition: .3s;
+
 }
 
-@media (max-width: 600px) {
-  
+.headline :hover {
+
+  transform: scaleY(1.1);
+  transform: translate(31deg);
+  background-color: rgb(46, 11, 3);
 }
+
+.demo {
+  height: 100vh;
+}
+
+@media screen and (min-width:800px) {
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titles {
+    height:8em;
+    display: flex;
+    overflow: auto;
+    align-items: center;
+  }
+}
+
+/* @media screen and (max-width: 880px) {
+  .headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.4rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .titles {
+    display: flex;
+    overflow: auto;
+    word-wrap: break-word;
+    align-items: center;
+  }
+} */
