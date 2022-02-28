@@ -22,19 +22,25 @@ export async function getStaticProps() {
 
 export default function Home({data}) {
 
-  if(data === undefined) {
+  if(data.articles.length <= 0) {
     return(
       <div className={styles.demo}>
-      <Header pageName={"_Prothomalo"}>
-      <Link href='/'> Home </Link> 
-      </Header> 
+        <Header pageName='_ProthomAlo'>
+         <Link href='/'> Home </Link>
+        </Header>
+        <div className={styles.sorry}>
+           API isn`t Responding 
+        </div>
+      <div>
+        
+      </div>
       </div>
     )
   }
 
   return (
     <>
-     <Header pageName={"_Prothomalo"}>
+     <Header pageName={"_ProthomAlo"}>
       <Link href='/'> Home </Link> 
      </Header> 
       

@@ -45,7 +45,15 @@
 }
 
 .demo {
-  height: 100vh;
+  height: 90vh;
+  
+}
+.sorry {
+  background-color: rgb(172, 54, 38);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img {

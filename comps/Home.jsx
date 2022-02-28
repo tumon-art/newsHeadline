@@ -6,12 +6,18 @@ import Header from './Header'
 export default function Home({posts}) {
 
     // if no post
-  if(posts === undefined) {
+  if(posts.articles.length <= 0) {
     return(
       <div className={styles.demo}>
-      <Header>
-      <Link href='/aljazeera'> Aljazeera </Link> 
-      </Header>
+        <Header>
+         Aljazeera 
+        </Header>
+        <div className={styles.sorry}>
+           API isn't Responding 
+        </div>
+      <div>
+        
+      </div>
       </div>
     )
   }
