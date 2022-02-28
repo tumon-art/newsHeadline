@@ -8,11 +8,11 @@
 }
 
 .headline {
-  margin: 2em 1.5em;
+  margin: 2em ;
 }
 
 .titles {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   color: #d7c1b1;
   background-color: rgb(68, 25, 9);
   font-weight: bolder;
