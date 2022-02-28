@@ -17,8 +17,7 @@
   background-color: rgb(68, 25, 9);
   font-weight: bolder;
   font-size: 0.9rem;
-  font-family: 'Fjalla One', sans-serif;
-  /* border-radius: 10px 10px; */
+  font-family:sans-serif;
   padding: 0.7em;
   box-shadow: 3px 3px 6px 2px rgb(119, 29, 17);
   transition: .3s;
