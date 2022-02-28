@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export async function getStaticProps() {
 
-    const res = await fetch(`https://newsapi.org/v2/everything?domains=aljazeera.com&apiKey=${process.env.NEWS_API}`)
+    const res = await fetch(`https://newsapi.org/v2/top-headlines?sources=al-jazeera-english&apiKey=${process.env.NEWS_API}`)
     const data = await res.json()
   
     if (!data) {
