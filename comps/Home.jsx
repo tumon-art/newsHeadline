@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Header from './Header'
 
 
 export default function Home({posts}) {
@@ -8,12 +9,9 @@ export default function Home({posts}) {
   if(posts === undefined) {
     return(
       <div className={styles.demo}>
-      <div className={styles.headerHold}>
-      <div className={styles.h1}> Head-Line </div>
-      <div className={styles.about}>
-      <Link href='/about'> About </Link> 
-      </div>
-      </div> 
+      <Header>
+      <Link href='/aljazeera'> Aljazeera </Link> 
+      </Header>
       </div>
     )
   }
@@ -21,12 +19,10 @@ export default function Home({posts}) {
   // if post exists
   return (
     <>
-     <div className={styles.headerHold}>
-     <div className={styles.h1}> Head-Line </div>
-     <div className={styles.about}>
-      <Link href='/aljazeera'> Aljazeera </Link> 
-     </div>
-     </div>
+     <Header>
+     <Link href='/aljazeera'> Aljazeera </Link> 
+     </Header>
+     
      <div className={styles.headline}>
         {posts.articles !== undefined && (
           posts.articles.map((e,i)=>{

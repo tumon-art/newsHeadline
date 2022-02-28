@@ -3,7 +3,7 @@ import Home from "../comps/Home"
 export async function getStaticProps() {
 
     // fecht posts
-  const res = await fetch(`https://newsapi.org/v2/everything?domains=trtworld.com&apiKey=${process.env.NEWS_API}`)
+  const res = await fetch(`https://newsapi.org/v2/everything?domains=cgtn.com&apiKey=${process.env.NEWS_API}`)
   const data = await res.json()
 
   if (!data) {
@@ -14,7 +14,7 @@ export async function getStaticProps() {
 
   return {
     props: {data},
-    revalidate: 20, // refresh
+    revalidate: 10, // refresh
   }
 
 }

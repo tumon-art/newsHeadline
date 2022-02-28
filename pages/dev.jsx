@@ -4,7 +4,7 @@ import Header from '../comps/Header'
 
 export async function getStaticProps() {
 
-  const res = await fetch(`https://newsapi.org/v2/everything?domains=aljazeera.com&apiKey=${process.env.NEWS_API}`)
+  const res = await fetch(`https://newsapi.org/v2/everything?domains=dev.to&apiKey=${process.env.NEWS_API}`)
   const data = await res.json()
 
   if (!data) {
@@ -21,11 +21,11 @@ export async function getStaticProps() {
 }
 
 export default function Home({data}) {
-
+    
   if(data === undefined) {
     return(
       <div className={styles.demo}>
-      <Header pageName={"_Aljazeera"}>
+      <Header pageName={"_Dev"}>
       <Link href='/'> Home </Link> 
       </Header> 
       </div>
@@ -34,9 +34,9 @@ export default function Home({data}) {
 
   return (
     <>
-     <Header pageName={"_Aljazeera"}>
+     <Header pageName={"_Dev"}>
       <Link href='/'> Home </Link> 
-      </Header> 
+     </Header> 
       
      <div className={styles.headline}>
         {data.articles !== undefined && (
