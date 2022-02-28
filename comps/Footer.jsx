@@ -21,7 +21,7 @@ const Footer = () => {
      <p className={styles.p}> Done with NextJS and NewsApi</p>
     
     <span className={styles.copyrights}>
-        Copyrights 2022
+        Copyright © 2022
     </span>
 
    </div>
