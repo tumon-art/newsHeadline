@@ -50,7 +50,7 @@ const Header = ({children,pageName}) => {
         </svg>
 
         <div className={styles.h1}>
-        Head-Line 
+        <Link href='/'> Head-Line </Link>
         <span className={styles.pageName}>
         {pageName}
         </span>

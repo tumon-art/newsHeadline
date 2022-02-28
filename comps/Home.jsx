@@ -29,7 +29,9 @@ export default function Home({posts}) {
             return(
                 <div key={i}>
                 <div className={styles.titles}>
+                {/* <img className={styles.img} src={e.urlToImage} alt='image' loading="lazy" /> */}
                 <img className={styles.img} src={e.urlToImage} alt='image' loading="lazy" />
+
                   <Link href={e.url}>
                     {e.title}
                   </Link>
