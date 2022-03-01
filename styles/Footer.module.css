@@ -33,13 +33,32 @@
     height: 2em;
     cursor: pointer;
     transform: rotate(180deg);
-    transition: 0.2s;
+    transition: 1s;
     color: #702c0c;
     background-color: #381d10;
     border-radius: 50%;
     padding: 2px;
 }
 
+
 .scrollTop:hover {
-    transform: scale(1.1) rotate(180deg);
+    transform: scale(1.1);
+    animation: mover 0.5s forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes mover {
+    0% {
+        transform: scale(1.1) rotate(180deg); 
+    }
+
+    30% {
+        transform: scale(1.1) rotate(230deg); 
+    }
+    60% {
+        transform: scale(1.1) rotate(90deg); 
+    }
+    100% {
+        transform: scale(1.1) rotate(180deg); 
+    }
 }
