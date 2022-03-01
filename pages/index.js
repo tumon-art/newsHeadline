@@ -3,7 +3,7 @@ import Home from "../comps/Home"
 export async function getStaticProps() {
 
     // fecht posts
-  const res = await fetch(`https://newsapi.org/v2/everything?domains=dailysabah.com&apiKey=${process.env.NEWS_API}`)
+  const res = await fetch(`https://newsapi.org/v2/top-headlines?sources=google-news&apiKey=${process.env.NEWS_API}`)
   const data = await res.json()
 
   if (!data) {
